@@ -40,7 +40,7 @@ EXPOSE 8080 9990 9999
 ENTRYPOINT $JBOSS_HOME/bin/standalone.sh -c standalone-full-ha.xml
 
 # deploy app
-#ADD sample.war "$JBOSS_HOME/standalone/deployments/"
+ADD sample.war "$JBOSS_HOME/standalone/deployments/"
 
 USER jboss
 CMD /bin/bash
